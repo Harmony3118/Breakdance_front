@@ -1,12 +1,12 @@
 import React from "react";
-import "./Body.css";
+import "./Main.css";
 
-function Body() {
+function Main() {
   return (
-    <body>
+    <main>
       <p> Ceci est le corps de la page</p>
-    </body>
+    </main>
   );
 }
 
-export default Body;
+export default Main;
