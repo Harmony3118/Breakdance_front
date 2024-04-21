@@ -1,26 +1,28 @@
 import React from "react";
-import { Link } from "react-router-dom"; /* Pour utiliser Link */
-
-import "./Navbar.css";
-
+import { Link } from "react-router-dom";
 import logoLastSquad from "../../img/logoLastSquad.png";
+import "./Navbar.css";
 
 function Navbar() {
   return (
     <nav>
-      <Link to="/" className="logo">
-        <img src={logoLastSquad} className="bouttonLogo" alt="Facebook" />
+      <Link to="/" className="Logo">
+        <img
+          src={logoLastSquad}
+          className="bouttonLogo"
+          alt="logo de LastSquad"
+        />
       </Link>
       <nav>
-        <a href="" className="index">
-          HISTOIRE{" "}
-        </a>
-        <a href="" className="index">
+        <Link to="/histoire" className="index">
+          {" "}
+          HISTOIRE
+        </Link>
+        <Link to="/videos" className="index">
           {" "}
           VIDÉOS
-        </a>
+        </Link>
       </nav>
-   
     </nav>
   );
 }
