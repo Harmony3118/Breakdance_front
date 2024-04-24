@@ -1,0 +1,90 @@
+.last-squad {
+  padding: 20px;
+  text-align: center;
+  background: linear-gradient(to right, #59262E, #590512);
+  color : white;
+  padding: 20px;
+}
+
+.Project{
+     padding: 20px;
+  text-align: center;
+  background: linear-gradient(to right, #59262E, #590512);
+  color : white;
+  padding: 20px;
+}
+.instagram-logo{
+    margin-left: 2%;
+}
+
+p,h3{
+    margin-left: 2%;
+    margin-right:2%;
+}
+.profile-image {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%; /* Crée des images de profil rondes */
+  object-fit: cover; /* Ajuste la taille de l'image */
+  margin-left:  4%;;
+}
+
+.custom-row {
+  border-bottom: 2px solid black;
+ 
+}
+
+.custom-col {
+  border-right: 2px solid black;
+  padding: 10px;
+}
+
+.custom-col:last-child {
+  border-right: none;
+}
+.container-fluid {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.playlist {
+  text-align: center;
+  margin-bottom: 0px;
+  background-color:#F8F9FA;
+}
+
+.playlist h2 {
+  font-size: 2em;
+  margin-bottom: 0px;
+}
+
+.playlist .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.playlist .container .row {
+  padding: 0 20px; /* Espacement à gauche et à droite de la ligne */
+}
+
+.playlist .container .col {
+  display: flex;
+  justify-content: center; /* Centrer horizontalement */
+  align-items: center; /* Centrer verticalement */
+  border-left: 2px solid black; /* Trait vertical entre les images */
+  margin: 0; /* Supprimer la marge pour les colonnes */
+  padding: 0; /* Supprimer le padding pour les colonnes */
+}
+
+.spotify, .deezer {
+  max-width: 55%; /* Ajustement de la taille des images */
+  height: auto;
+  margin: 20px auto; /* Espacement autour des images et centrage horizontal */
+  display: block; /* Pour centrer l'image */
+}
+
+
+.playlist .container .col:first-of-type {
+  border-left: none;
+}

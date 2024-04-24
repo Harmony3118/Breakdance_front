@@ -15,11 +15,9 @@ function Navbar() {
       </Link>
       <nav>
         <Link to="/histoire" className="index">
-          {" "}
           HISTOIRE
         </Link>
         <Link to="/videos" className="index">
-          {" "}
           VIDÉOS
         </Link>
       </nav>
