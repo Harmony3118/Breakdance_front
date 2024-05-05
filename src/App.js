@@ -1,19 +1,19 @@
-import React from "react";
-import "./App.css";
-import Header from "./components/Header/Header";
-import Main from "./components/Main/Main";
-import Footer from "./components/Footer/Footer";
-import Navigateur from "./components/Navigateur/Navigateur";
+import React, { Suspense, lazy } from "react";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
-function App() {
-  return (
-    <div>
-      <Header />
-      <Navigateur />
-      <Main />
-      <Footer />
-    </div>
-  );
-}
+
+const Home = lazy(() => import("./Pages/Home/Home"));
+const Histoire = lazy(() => import("./Pages/Histoire/Histoire"));
+
+const App = () => (
+  <Router>
+    <Suspense fallback={<div>Chargement...</div>}>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/histoire" element={<Histoire />} />
+      </Routes>
+    </Suspense>
+  </Router>
+);
 
 export default App;
