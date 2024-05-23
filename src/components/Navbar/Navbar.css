@@ -43,7 +43,7 @@
   height: 3px;
   position: relative;
   border-radius: 3px;
-  background: rgb(0, 0, 0);
+  background: rgb(255, 255, 255);
   transition: all 0.5s ease-in-out;
 }
 
@@ -72,7 +72,7 @@
  margin :0 auto; 
   width:3vw;
   height:1px;
-background:#fff;
+background:#ffffff;
 }
 
 
@@ -124,7 +124,7 @@ background:#fff;
    .navbar-links-mobile .navbar-link {
     padding: 1.5rem; /* Ajuster l'espacement entre les liens */
     font-size: 1.5em; /* Ajuster la taille de la police pour les écrans étroits */
-    color: #000000; /* Couleur du texte */
+    color: #eae7e7; /* Couleur du texte */
     text-decoration: none; /* Supprimer la soulignement des liens */
     transition: color 0.3s ease; 
     margin-top:20px;
