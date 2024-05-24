@@ -192,33 +192,23 @@ function Home() {
           </Row>
         </Container-fluid>
         <div className="Project">
-          <h2>Le but du projet</h2>
+          <h3>Le but du projet</h3>
 
           <p>
-            Lorem ipsum dolor sit amet consectetur. Viverra neque porttitor
-            suspendisse nisi. Cursus posuere dui lorem etiam bibendum elementum
-            ullamcorper. Orci nunc bibendum blandit mauris purus velit. Lacus in
-            a id curabitur quam volutpat sed mus fusce. Enim vel quis senectus
-            facilisi pellentesque neque fermentum rutrum cursus. Enim in et diam
-            diam sed. Felis lectus sit elit nunc amet lectus mi ridiculus. Nulla
-            facilisi dictum est tincidunt faucibus consequat nunc in lacinia.
-            Nunc adipiscing volutpat aliquet est suspendisse scelerisque neque.
-            Mattis tortor pellentesque vulputate et in ultrices mollis enim.
-            Congue suspendisse ullamcorper eu mattis. Elit sociis rutrum ut
-            viverra lectus tincidunt.
+            L’objectif du projet est de créer un catalogue de mouvements de
+            breakdance accessible via un site internet. Ce catalogue
+            sera géré grâce à une base de données, conçue pour être exploitable
+            et enrichie par des novices en informatique. Pour faciliter cela, un
+            service utilisateur sera envisagé.
           </p>
           <p>
-            Pellentesque accumsan praesent eget amet orci senectus urna auctor
-            neque. Lacus a facilisis amet justo mauris. Pretium amet enim dictum
-            nisl. Euismod sollicitudin sed erat placerat. Enim egestas tellus
-            cursus nibh eros. Nulla venenatis eget vitae diam faucibus
-            adipiscing arcu. Nisl auctor nunc purus vestibulum euismod. Amet
-            tempus sit eu malesuada. Vestibulum cursus sed praesent in dictumst
-            metus. Non senectus turpis venenatis interdum ultrices ut faucibus
-            natoque amet. Consectetur sed sed porttitor massa ut lacus. Varius
-            ridiculus dolor consectetur feugiat cras faucibus accumsan convallis
-            aliquam. Euismod et libero felis malesuada. Euismod sed sapien
-            venenatis blandit diam vel nec morbi viverra.
+            Le livrable pour le client est un site internet permettant de
+            manipuler une base de données classifiant les mouvements de
+            breakdance. Il est essentiel que le
+            client puisse ajouter des données à cette base, ce qui nécessite la
+            mise en place d’un service administrateur. Le projet doit également
+            respecter les exigences du plan vert (loi Grenelle 1-2009). La date
+            de réalisation de ce projet est 2024. Enfin, le site fera l'objet d'un second projet transdiciplinaire pour finir le site en entier.
           </p>
         </div>
         <div className="playlist">
@@ -239,18 +229,14 @@ function Home() {
                   />
                 </a>
               </Col>
-             
+
               <Col>
                 <a
                   href="https://www.deezer.fr"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <img
-                    src={deezer}
-                    alt="playlist spotify"
-                    className="deezer"
-                  />
+                  <img src={deezer} alt="playlist spotify" className="deezer" />
                 </a>
               </Col>
             </Row>
