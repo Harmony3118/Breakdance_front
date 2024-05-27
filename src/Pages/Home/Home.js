@@ -207,7 +207,7 @@ function Home() {
             breakdance. Il est essentiel que le
             client puisse ajouter des données à cette base, ce qui nécessite la
             mise en place d’un service administrateur. Le projet doit également
-            respecter les exigences du plan vert (loi Grenelle 1-2009). La date
+            respecter les exigences du plan vert (loi Grenelle 1-2009).Dans le cadre de la création du site, il est essentiel de mettre en lumière les enjeux de Développement Durable et de Responsabilité Sociétale (DD&RS). Ces enjeux sont cruciaux non seulement pour respecter la législation en vigueur, mais aussi pour promouvoir une culture de durabilité et de responsabilité au sein de notre établissement. La date
             de réalisation de ce projet est 2024. Enfin, le site fera l'objet d'un second projet transdiciplinaire pour finir le site en entier.
           </p>
         </div>
