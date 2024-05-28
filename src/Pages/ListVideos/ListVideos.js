@@ -6,6 +6,9 @@ import "./ListVideos.css";
 
 function Videos() {
   const [listeMvt, setListeMvt] = useState([]);
+  const [searchTerm, setSearchTerm] = useState("");
+  const [selectedFamille, setSelectedFamille] = useState("");
+  const [filterVisible, setFilterVisible] = useState(false);
 
   useEffect(() => {
     const fetchListeMvt = async () => {
@@ -24,13 +27,53 @@ function Videos() {
     fetchListeMvt();
   }, []);
 
+  const handleSearch = (event) => {
+    setSearchTerm(event.target.value);
+  };
+
+  const handleFilter = (famille) => {
+    setSelectedFamille(famille);
+    setFilterVisible(false);
+  };
+
+  const filteredMvt = listeMvt.filter((mvt) => {
+    return (
+      (mvt.nom.toLowerCase().includes(searchTerm.toLowerCase()) ||
+        searchTerm === "") &&
+      (mvt.famille === selectedFamille || selectedFamille === "")
+    );
+  });
+
   return (
     <div>
       <Navbar />
       <main>
-        <h2>Liste des Mouvements</h2>
+        <div className="search-filter-container">
+          <button
+            className="filter-toggle-button"
+            onClick={() => setFilterVisible(!filterVisible)}
+          >
+            Filtres
+          </button>
+          <input
+            type="text"
+            placeholder="Rechercher une vidéo..."
+            value={searchTerm}
+            onChange={handleSearch}
+            className="search-bar"
+          />
+          <div className={`filter-buttons ${filterVisible ? "visible" : ""}`}>
+            <button onClick={() => handleFilter("")}>Tout</button>
+            <button onClick={() => handleFilter("TopRock")}>TopRock</button>
+            <button onClick={() => handleFilter("Footwork")}>Footwork</button>
+            <button onClick={() => handleFilter("Freeze")}>Freeze</button>
+            <button onClick={() => handleFilter("Powermoves")}>
+              Powermoves
+            </button>
+          </div>
+        </div>
         <ul className="video-list">
-          {listeMvt.map((mvt) => (
+          {filteredMvt.map((mvt) => (
             <li key={mvt.id} className="video-item">
               <Link to={`/affichVideo/${mvt.id}`}>
                 <img
