@@ -1,0 +1,28 @@
+.video-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+  }
+  
+  .video-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px;
+  }
+  
+  .video-thumbnail {
+    width: 20vw; /* Vous pouvez ajuster la taille comme nécessaire */
+    height: auto;
+    border-radius: 8px; /* Pour des coins arrondis, optionnel */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Pour une ombre, optionnel */
+  }
+  
+  .video-item p {
+    text-align: center;
+    margin-top: 5px;
+    font-size: 14px; /* Ajustez la taille de la police selon vos besoins */
+  }

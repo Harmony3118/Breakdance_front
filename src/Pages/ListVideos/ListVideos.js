@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import Navbar from "../../components/Navbar/Navbar";
 import Footer from "../../components/Footer/Footer";
+import "./ListVideos.css";
 
 function Videos() {
   const [listeMvt, setListeMvt] = useState([]);
@@ -28,11 +29,16 @@ function Videos() {
       <Navbar />
       <main>
         <h2>Liste des Mouvements</h2>
-        <ul>
-          {listeMvt.map((listeMvt) => (
-            <li key={listeMvt.id}>
-              Video 1 :{" "}
-              <Link to={`/affichVideo/${listeMvt.id}`}>{listeMvt.nom}</Link>
+        <ul className="video-list">
+          {listeMvt.map((mvt) => (
+            <li key={mvt.id} className="video-item">
+              <Link to={`/affichVideo/${mvt.id}`}>
+                <img
+                  src={`http://localhost:5000/thumbnail/${mvt.id}`}
+                  alt={`${mvt.nom} thumbnail`}
+                  className="video-thumbnail"
+                />
+              </Link>
             </li>
           ))}
         </ul>
