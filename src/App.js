@@ -7,6 +7,7 @@ const Videos = lazy(() => import("./Pages/ListVideos/ListVideos"));
 const AffichageVideo = lazy(() =>
   import("./Pages/AffichageVideo/AffichageVideo")
 );
+const Admin = lazy(() => import("./Pages/Admin/Admin"));
 
 const App = () => (
   <Router>
@@ -16,6 +17,7 @@ const App = () => (
         <Route path="/histoire" element={<Histoire />} />
         <Route path="/videos" element={<Videos />} />
         <Route path="/affichVideo/:id_mvt" element={<AffichageVideo />} />
+        <Route path="/admin" element={<Admin />} />
       </Routes>
     </Suspense>
   </Router>

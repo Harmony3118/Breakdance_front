@@ -6,6 +6,7 @@ import {
   MDBCol,
   MDBIcon,
 } from "mdb-react-ui-kit";
+import { Link } from "react-router-dom";
 
 export default function Footer() {
   return (
@@ -64,6 +65,11 @@ export default function Footer() {
                 <MDBIcon color="secondary" icon="phone" className="me-3" /> Omar
                 Remichi : 06 52 60 54 30
               </p>
+            </MDBCol>
+            <MDBCol md="4" lg="3" xl="3" className="mx-auto mb-md-0 mb-4">
+              <Link to={`/admin`}>
+                <p>Administrateur</p>
+              </Link>
             </MDBCol>
           </MDBRow>
         </MDBContainer>
