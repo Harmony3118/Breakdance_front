@@ -1,9 +1,11 @@
 import React, { useState, useEffect } from "react";
+import { useParams } from "react-router-dom";
 import "./AffichageVideo.css";
 import Navbar from "../../components/Navbar/Navbar";
 import Footer from "../../components/Footer/Footer";
 
 function AffichageVideo() {
+  const { id_mvt } = useParams();
   const [titre, setTitre] = useState("");
   const [videoSrc, setVideoSrc] = useState("");
   const [description, setDescription] = useState("");
@@ -13,7 +15,7 @@ function AffichageVideo() {
   useEffect(() => {
     const fetchVideo = async () => {
       try {
-        const response = await fetch("http://localhost:5000/video");
+        const response = await fetch(`http://localhost:5000/video/${id_mvt}`);
         if (!response.ok) {
           throw new Error("Erreur lors de la récupération de la vidéo");
         }
@@ -27,7 +29,7 @@ function AffichageVideo() {
 
     const fetchData = async () => {
       try {
-        const response = await fetch("http://localhost:5000/data");
+        const response = await fetch(`http://localhost:5000/data/${id_mvt}`);
         if (!response.ok) {
           throw new Error("Erreur lors de la récupération des données");
         }
@@ -43,7 +45,7 @@ function AffichageVideo() {
 
     fetchVideo();
     fetchData();
-  }, []);
+  }, [id_mvt]);
 
   return (
     <div>

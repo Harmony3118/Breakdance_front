@@ -3,7 +3,7 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 const Home = lazy(() => import("./Pages/Home/Home"));
 const Histoire = lazy(() => import("./Pages/Histoire/Histoire"));
-const Videos = lazy(() => import("./Pages/Videos/Videos"));
+const Videos = lazy(() => import("./Pages/ListVideos/ListVideos"));
 const AffichageVideo = lazy(() =>
   import("./Pages/AffichageVideo/AffichageVideo")
 );
@@ -15,7 +15,7 @@ const App = () => (
         <Route path="/" element={<Home />} />
         <Route path="/histoire" element={<Histoire />} />
         <Route path="/videos" element={<Videos />} />
-        <Route path="/affichVideo" element={<AffichageVideo />} />
+        <Route path="/affichVideo/:id_mvt" element={<AffichageVideo />} />
       </Routes>
     </Suspense>
   </Router>
