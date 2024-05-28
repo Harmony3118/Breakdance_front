@@ -26,8 +26,8 @@ margin-left: 2%;
 }
 
 .images img {
-  margin: 0 10px;
-  width: 150px;
+  margin: 0 10vw;
+  width: 150vw;
   height: auto;
 }
 .content {
