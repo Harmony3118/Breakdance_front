@@ -11,91 +11,41 @@ export default function Footer() {
   return (
     <MDBFooter bgColor="light" className="text-center text-lg-start text-muted">
       <section className="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
-        <div className="me-5 d-none d-lg-block">
-         
-        </div>
-
-        <div>
-          <a href="" className="me-4 texyt-reset">
-            <MDBIcon color="secondary" fab icon="facebook-f" />
-          </a>
-          <a href="" className="me-4 text-reset">
-            <MDBIcon color="secondary" fab icon="twitter" />
-          </a>
-          <a href="" className="me-4 text-reset">
-            <MDBIcon color="secondary" fab icon="google" />
-          </a>
-          <a href="" className="me-4 text-reset">
-            <MDBIcon color="secondary" fab icon="instagram" />
-          </a>
-          <a href="" className="me-4 text-reset">
-            <MDBIcon color="secondary" fab icon="linkedin" />
-          </a>
-          <a href="" className="me-4 text-reset">
-            <MDBIcon color="secondary" fab icon="github" />
-          </a>
-        </div>
+        <div className="me-5 d-none d-lg-block"></div>
       </section>
 
       <section className="">
         <MDBContainer className="text-center text-md-start mt-5">
           <MDBRow className="mt-3">
-            <MDBCol md="3" lg="4" xl="3" className="mx-auto mb-4">
-              <h6 className="text-uppercase fw-bold mb-4">
-                <MDBIcon color="secondary" icon="gem" className="me-3" />
-                Company name
-              </h6>
-              <p>
-                Here you can use rows and columns to organize your footer
-                content. Lorem ipsum dolor sit amet, consectetur adipisicing
-                elit.
-              </p>
-            </MDBCol>
-
-            <MDBCol md="2" lg="2" xl="2" className="mx-auto mb-4">
-              <h6 className="text-uppercase fw-bold mb-4">Products</h6>
-              <p>
-                <a href="#!" className="text-reset">
-                  Angular
-                </a>
-              </p>
-              <p>
-                <a href="#!" className="text-reset">
-                  React
-                </a>
-              </p>
-              <p>
-                <a href="#!" className="text-reset">
-                  Vue
-                </a>
-              </p>
-              <p>
-                <a href="#!" className="text-reset">
-                  Laravel
-                </a>
-              </p>
-            </MDBCol>
-
             <MDBCol md="3" lg="2" xl="2" className="mx-auto mb-4">
-              <h6 className="text-uppercase fw-bold mb-4">Useful links</h6>
+              <h6 className="text-uppercase fw-bold mb-4">Liens utiles</h6>
               <p>
-                <a href="#!" className="text-reset">
-                  Pricing
+                <a href="https://www.last-squad.com/" className="text-reset">
+                  Site Officiel
                 </a>
               </p>
               <p>
-                <a href="#!" className="text-reset">
-                  Settings
+                <a
+                  href="https://www.youtube.com/channel/UCdeJr4sjjOiuQ84zjoK8qzQ?view_as=subscriber"
+                  className="text-reset"
+                >
+                  Youtube
                 </a>
               </p>
               <p>
-                <a href="#!" className="text-reset">
-                  Orders
+                <a
+                  href="https://www.facebook.com/Lastsquadcrew/about?locale=fr_FR"
+                  className="text-reset"
+                >
+                  Facebook
                 </a>
               </p>
               <p>
-                <a href="#!" className="text-reset">
-                  Help
+                <a
+                  href="https://www.instagram.com/lastsquad_crew/?hl=fr"
+                  className="text-reset"
+                >
+                  Instagram
                 </a>
               </p>
             </MDBCol>
@@ -103,20 +53,16 @@ export default function Footer() {
             <MDBCol md="4" lg="3" xl="3" className="mx-auto mb-md-0 mb-4">
               <h6 className="text-uppercase fw-bold mb-4">Contact</h6>
               <p>
-                <MDBIcon color="secondary" icon="home" className="me-2" />
-                New York, NY 10012, US
+                <MDBIcon color="secondary" icon="adresse" className="me-3" />
+                Adresse : Bordeaux
               </p>
               <p>
-                <MDBIcon color="secondary" icon="envelope" className="me-3" />
-                info@example.com
+                <MDBIcon color="secondary" icon="mail" className="me-3" />
+                lasquadracrew@gmail.com
               </p>
               <p>
-                <MDBIcon color="secondary" icon="phone" className="me-3" /> + 01
-                234 567 88
-              </p>
-              <p>
-                <MDBIcon color="secondary" icon="print" className="me-3" /> + 01
-                234 567 89
+                <MDBIcon color="secondary" icon="phone" className="me-3" /> Omar
+                Remichi : 06 52 60 54 30
               </p>
             </MDBCol>
           </MDBRow>

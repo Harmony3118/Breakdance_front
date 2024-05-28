@@ -7,31 +7,67 @@ export default function Histoire() {
   return (
     <div>
       <Navbar />
-      <main>
-        <h1 className="heading-style ">L'histoire du Breakdance</h1>
-        
-          <div className="history-image">
-            <h2 className="history-title">Origines du Breakdance</h2>
-            <p className="history-text">
-              Le breakdance, également appelé « b-boying » ou « breaking », a
-              émergé dans les années 1970 dans les quartiers urbains de New
-              York. Il était associé à la culture hip-hop naissante, incluant le
-              graffiti et le rap.
+      <div className="App">
+        <header className="App-header">
+          <h1>L'histoire du Breakdance</h1>
+        </header>
+        <main>
+          <section className="intro">
+            <p>
+              Lorem ipsum dolor sit amet consectetur. Dolor risus eget in
+              gravida eget. Condimentum nisi aliquet eget mauris lacus hac.
+              Tellus eu duis amet fringilla. Semper duis quis ac at eu praesent
+              elementum.
             </p>
-         
-       
-            <h2 className="history-title">Évolution</h2>
-            <p className="history-text">
-              Au fil des années, le breakdance est devenu une forme d'art à part
-              entière, avec ses propres techniques et styles. Il a gagné en
-              popularité dans le monde entier grâce à des compétitions et des
-              films comme "Beat Street" et "Breakin'".
+            <div className="images">
+              <img src="image1.jpg" alt="Breakin'" />
+              <img src="image2.jpg" alt="Wild Style" />
+              <img src="image3.jpg" alt="Beat Street" />
+              <img src="image4.jpg" alt="Flashdance" />
+            </div>
+            <p>
+              Lorem ipsum dolor sit amet consectetur. Egestas pellentesque sed
+              libero cursus morbi nisi mauris fermentum. Augue ullamcorper
+              mauris pharetra aliquam a gravida. Fringilla turpis sapien dictum
+              auctor pellentesque.
             </p>
-          
-        </div>
-
-      </main>
-      <Footer />
+          </section>
+          <section className="artists">
+            <section className="content">
+              <div className="text-block">
+                <p>
+                  Lorem ipsum dolor sit amet consectetur. Sollicitudin ultrices
+                  pellentesque vivamus massa nibh diam ac elit. Quam sed amet
+                  massa sagittis sit dolor auctor magna cras.
+                </p>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur. Sollicitudin ultrices
+                  pellentesque vivamus massa nibh diam ac elit. Quam sed amet
+                  massa sagittis sit dolor auctor magna cras.
+                </p>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur. Sollicitudin ultrices
+                  pellentesque vivamus massa nibh diam ac elit. Quam sed amet
+                  massa sagittis sit dolor auctor magna cras.
+                </p>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur. Sollicitudin ultrices
+                  pellentesque vivamus massa nibh diam ac elit. Quam sed amet
+                  massa sagittis sit dolor auctor magna cras.
+                </p>
+                <p>
+                  Ullamcorper ullamcorper netus tellus congue. Vitae lacus enim
+                  cum turpis quisque duis curabitur. Odio aliquet orci at lacus.
+                </p>
+              </div>
+              <div className="image-block">
+                <img src="image5.jpg" alt="Break Dancer" />
+              </div>
+            </section>
+          </section>
+        </main>
+        <Footer />
+      </div>
     </div>
   );
 }
