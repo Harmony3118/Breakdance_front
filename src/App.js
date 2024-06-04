@@ -8,6 +8,10 @@ const AffichageVideo = lazy(() =>
   import("./Pages/AffichageVideo/AffichageVideo")
 );
 const Admin = lazy(() => import("./Pages/Admin/Admin"));
+const Login = lazy(() => import("./Pages/Login/Login"));
+const ProtectedRoute = lazy(() =>
+  import("./components/ProtectedRoute/ProtectedRoute")
+);
 
 const App = () => (
   <Router>
@@ -17,7 +21,10 @@ const App = () => (
         <Route path="/histoire" element={<Histoire />} />
         <Route path="/videos" element={<Videos />} />
         <Route path="/affichVideo/:id_mvt" element={<AffichageVideo />} />
-        <Route path="/admin" element={<Admin />} />
+        {/* <Route path="/admin" element={<Admin />} /> */}
+        <Route path="/login" element={<Login />} />
+        <Route path="/admin" element={<ProtectedRoute component={Admin} />} />
+        <Route path="/logout" element={<Login />} />
       </Routes>
     </Suspense>
   </Router>

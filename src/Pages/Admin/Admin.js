@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import { useNavigate } from "react-router-dom";
 import "./Admin.css";
 import Navbar from "../../components/Navbar/Navbar";
 import Footer from "../../components/Footer/Footer";
@@ -7,15 +8,22 @@ import SupprimerMouvement from "../../components/SupprimerMouvement/SupprimerMou
 
 function Admin() {
   const [selectedOption, setSelectedOption] = useState("");
+  const navigate = useNavigate();
 
   const handleChange = (e) => {
     setSelectedOption(e.target.value);
+  };
+
+  const handleLogout = () => {
+    localStorage.removeItem("isAuthenticated");
+    navigate("/login");
   };
 
   return (
     <div>
       <Navbar />
       <main className="mainAdmin">
+        <button onClick={handleLogout}>Se déconnecter</button>
         <div className="option-container">
           <select id="modifBDD" onChange={handleChange} required>
             <option value="">Modifier la base de données</option>
