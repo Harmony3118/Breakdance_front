@@ -1,6 +1,4 @@
 import React, { useState } from "react";
-import Navbar from "../../components/Navbar/Navbar";
-import Footer from "../../components/Footer/Footer";
 import "./AddMouvement.css";
 
 function AddMouvement() {
@@ -8,7 +6,7 @@ function AddMouvement() {
     nom: "",
     description: "",
     famille: "1",
-    limite_age: "",
+    limiteAge: "",
   });
   const [videoFile, setVideoFile] = useState(null);
   const [imageFile, setImageFile] = useState(null);
@@ -34,12 +32,12 @@ function AddMouvement() {
     data.append("nom", formData.nom);
     data.append("description", formData.description);
     data.append("famille", formData.famille);
-    data.append("limite_age", formData.limite_age);
+    data.append("limiteAge", formData.limiteAge);
     data.append("video", videoFile);
     data.append("image", imageFile);
 
     try {
-      const response = await fetch("http://localhost:5000/add_mouvement", {
+      const response = await fetch("http://localhost:5000/addMouvement", {
         method: "POST",
         body: data,
       });
@@ -54,8 +52,7 @@ function AddMouvement() {
 
   return (
     <div>
-      <h2>Ajouter un Mouvement</h2>
-      <form onSubmit={handleSubmit} className="add-mouvement-form">
+      <form onSubmit={handleSubmit} className="modifBDD">
         <div>
           <label htmlFor="nom">Nom</label>
           <input
@@ -86,19 +83,19 @@ function AddMouvement() {
             onChange={handleChange}
             required
           >
-            <option value="1">Famille 1</option>
-            <option value="2">Famille 2</option>
-            <option value="3">Famille 3</option>
-            <option value="4">Famille 4</option>
+            <option value="0">TopRock</option>
+            <option value="1">Footwork</option>
+            <option value="2">Freeze</option>
+            <option value="3">Powermoves</option>
           </select>
         </div>
         <div>
-          <label htmlFor="limite_age">Limite d'âge</label>
+          <label htmlFor="limiteAge">Limite d'âge</label>
           <input
             type="number"
-            id="limite_age"
-            name="limite_age"
-            value={formData.limite_age}
+            id="limiteAge"
+            name="limiteAge"
+            value={formData.limiteAge}
             onChange={handleChange}
             min="0"
           />

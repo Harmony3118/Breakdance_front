@@ -4,7 +4,7 @@ import Navbar from "../../components/Navbar/Navbar";
 import Footer from "../../components/Footer/Footer";
 import "./ListVideos.css";
 
-function Videos() {
+function ListVideos() {
   const [listeMvt, setListeMvt] = useState([]);
   const [searchTerm, setSearchTerm] = useState("");
   const [selectedFamille, setSelectedFamille] = useState("");
@@ -77,10 +77,11 @@ function Videos() {
             <li key={mvt.id} className="video-item">
               <Link to={`/affichVideo/${mvt.id}`}>
                 <img
-                  src={`http://localhost:5000/thumbnail/${mvt.id}`}
-                  alt={`${mvt.nom} thumbnail`}
-                  className="video-thumbnail"
+                  src={`http://localhost:5000/image/${mvt.id}`}
+                  alt={`${mvt.nom} image`}
+                  className="video-image"
                 />
+                <p>{mvt.nom}</p>
               </Link>
             </li>
           ))}
@@ -91,4 +92,4 @@ function Videos() {
   );
 }
 
-export default Videos;
+export default ListVideos;

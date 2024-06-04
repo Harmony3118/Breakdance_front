@@ -1,0 +1,53 @@
+.video-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    list-style-type: none;
+    padding: 0;
+}
+  
+.eltImageSuppr {
+    margin: 10px;
+    cursor: pointer;
+    border: 2px solid transparent;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.eltImageSuppr.selected {
+    box-shadow: 0 4px 8px #590512;
+    border-radius: 8px;
+}
+  
+.imageSuppr {
+    object-fit: cover;
+    width: 15vw;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.imageSuppr.selected {
+    box-shadow: 0 0 15px #590512;
+}
+
+.video-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.eltImageSuppr {
+}
+
+.eltImageSuppr p {
+  text-decoration: none;
+    text-align: center;
+    margin-top: 5px;
+    font-size: 14px;
+    color: black;
+}
