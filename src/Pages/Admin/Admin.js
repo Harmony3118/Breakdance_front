@@ -15,8 +15,8 @@ function Admin() {
   return (
     <div>
       <Navbar />
-      <main>
-        <div>
+      <main className="mainAdmin">
+        <div className="option-container">
           <select id="modifBDD" onChange={handleChange} required>
             <option value="">Modifier la base de données</option>
             <option value="0">Ajouter un élément</option>

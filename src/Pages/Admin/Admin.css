@@ -1,39 +1,26 @@
-/* Admin.css */
+.mainAdmin {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 80vh;
+  background-color: #f8f9fa;
+  padding: 2%;
+}
 
-/* Conteneur principal pour centrer les éléments */
-.main {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    min-height: 80vh; /* Ajuste la hauteur selon le besoin */
-    background-color: #f8f9fa; /* Couleur de fond de la page */
-    padding: 20px;
-  }
+.option-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
   
-  /* Conteneur pour le menu déroulant */
-  .option-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-bottom: 20px;
-  }
-  
-  /* Styliser le menu déroulant */
-  #modifBDD {
-    background-color: #333; /* Fond gris foncé */
-    color: white; /* Texte blanc */
-    padding: 10px;
-    border: none;
-    border-radius: 5px;
-    margin-top: 10px;
-    cursor: pointer;
-  }
-  
-  /* Styliser le label */
-  label[for="modifAdmin"] {
-    font-size: 18px;
-    color: #333;
-    margin-bottom: 10px;
-  }
-  
+#modifBDD {
+  background-color: #333;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  margin-top: 3%;
+  margin-bottom: 3%;
+  cursor: pointer;
+}
