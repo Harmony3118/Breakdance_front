@@ -37,7 +37,7 @@ function AddMouvement() {
     data.append("image", imageFile);
 
     try {
-      const response = await fetch("http://localhost:5000/addMouvement", {
+      const response = await fetch("http://localhost:5500/addMouvement", {
         method: "POST",
         body: data,
       });

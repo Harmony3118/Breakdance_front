@@ -6,9 +6,9 @@ function SupprimerMouvement() {
   const [selectedMvt, setSelectedMvt] = useState(null);
 
   useEffect(() => {
-    const fetchListeMvt = async () => {
+    const ListeMvt = async () => {
       try {
-        const response = await fetch("http://localhost:5000/mouvements");
+        const response = await fetch("http://localhost:5500/mouvements");
         if (!response.ok) {
           throw new Error("Erreur lors de la récupération des mouvements");
         }
@@ -25,7 +25,7 @@ function SupprimerMouvement() {
   const supprMouvement = async (id) => {
     try {
       const response = await fetch(
-        `http://localhost:5000/supprimerMouvement/${id}`,
+        `http://localhost:5500/supprimerMouvement/${id}`,
         {
           method: "DELETE",
         }
@@ -63,7 +63,7 @@ function SupprimerMouvement() {
               onClick={() => setSelectedMvt(mvt.id)}
             >
               <img
-                src={`http://localhost:5000/image/${mvt.id}`}
+                src={`http://localhost:5500/image/${mvt.id}`}
                 alt={`${mvt.nom} image`}
                 className="imageSuppr"
               />

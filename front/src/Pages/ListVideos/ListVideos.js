@@ -13,7 +13,7 @@ function ListVideos() {
   useEffect(() => {
     const fetchListeMvt = async () => {
       try {
-        const response = await fetch("http://localhost:5000/mouvements");
+        const response = await fetch("http://localhost:5500/mouvements");
         if (!response.ok) {
           throw new Error("Erreur lors de la récupération des mouvements");
         }

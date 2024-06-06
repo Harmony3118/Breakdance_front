@@ -15,7 +15,7 @@ function AffichageVideo() {
   useEffect(() => {
     const fetchVideo = async () => {
       try {
-        const response = await fetch(`http://localhost:5000/video/${id_mvt}`);
+        const response = await fetch(`http://localhost:5500/video/${id_mvt}`);
         if (!response.ok) {
           throw new Error("Erreur lors de la récupération de la vidéo");
         }
@@ -29,7 +29,7 @@ function AffichageVideo() {
 
     const fetchData = async () => {
       try {
-        const response = await fetch(`http://localhost:5000/data/${id_mvt}`);
+        const response = await fetch(`http://localhost:5500/data/${id_mvt}`);
         if (!response.ok) {
           throw new Error("Erreur lors de la récupération des données");
         }
