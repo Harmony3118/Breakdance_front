@@ -8,7 +8,7 @@ function SupprimerMouvement() {
   useEffect(() => {
     const ListeMvt = async () => {
       try {
-        const response = await fetch("http://localhost:5500/mouvements");
+        const response = await fetch("http://breakdance.edufalc.fr:5500/mouvements");
         if (!response.ok) {
           throw new Error("Erreur lors de la récupération des mouvements");
         }
@@ -63,7 +63,7 @@ function SupprimerMouvement() {
               onClick={() => setSelectedMvt(mvt.id)}
             >
               <img
-                src={`http://localhost:5500/image/${mvt.id}`}
+                src={`http://breakdance.edufalc.fr:5500/image/${mvt.id}`}
                 alt={`${mvt.nom} image`}
                 className="imageSuppr"
               />
